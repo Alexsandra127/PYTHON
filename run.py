@@ -1,0 +1,3 @@
+nome = Alexsandra
+print (nome)
+

@@ -1,0 +1,5 @@
+a = int(input("Digite os dias: "))
+b = int(input("Digite as horas: "))
+c= int(input("Digite os minutos: "))
+d = int(input("Digite os segundos"))
+print("Total de segundos é: {}" .format((a*24*60*60)+(b*60*60)+(c*60)+d))
