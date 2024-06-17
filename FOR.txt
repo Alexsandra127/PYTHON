@@ -1,0 +1,31 @@
+Não, o uso do for in no seu código não está correto. O for in é usado para iterar sobre os elementos de uma sequência (como listas, tuplas, conjuntos, etc.), mas você está tentando acessar os elementos da lista de uma maneira que não é válida em Python.
+
+Veja como você pode corrigir o seu código:
+
+python
+Copy code
+L = []
+while True:
+    n = int(input("Digite um número (0 sai): "))
+    if n == 0:
+        break
+    L.append(n)
+
+for num in L:
+    print(num)
+Neste código corrigido, primeiro criamos uma lista vazia L. Em seguida, usamos um loop while True para continuar pedindo números ao usuário até que ele insira 0, momento em que o loop é interrompido com break. Os números digitados pelo usuário são adicionados à lista L.
+
+Depois disso, usamos um loop for num in L: para iterar sobre cada elemento da lista L. Em cada iteração, o valor do elemento atual é armazenado na variável num, que é impressa na tela. Este é o padrão Pythonico para iterar sobre os elementos de uma lista.
+
+User
+Quando você diz iterar uma lista quer dizer adicionar os números nessa lista ?
+ChatGPT
+Quando menciono "iterar sobre uma lista", estou me referindo a percorrer cada elemento presente na lista. Iterar sobre uma lista não adiciona elementos a ela, mas sim percorre cada item já presente nela, permitindo que você realize operações em cada elemento individualmente.
+
+No contexto de programação, "iterar" significa passar por cada item em uma sequência (como uma lista) e realizar uma operação com cada item, como imprimir na tela, realizar cálculos, verificar condições, entre outras possibilidades.
+
+No exemplo que forneci anteriormente, ao usar o loop for num in L:, estamos percorrendo cada elemento da lista L e armazenando temporariamente cada valor na variável num, permitindo que façamos algo com cada valor individualmente. Isso é o que significa "iterar sobre a lista".
+
+
+
+
